@@ -53,7 +53,7 @@ router.post("/", (req, res) => {
 });
 
 router.delete("/", (req, res) => {
-  //essa função de deletar eu faria por uma flag direto no model, criaria um campo deleted: false no model e dava um update pra deleted: true
+  //essa função de deletar eu faria por uma flag direto no model e utilizando o findOneAndUpdate, criaria um campo deleted: false no model e dava um update pra deleted: true
   //(e todas as listagens teriam que chamar um deleted: false como parâmetro tb)
 
   //Crie aqui a função para remover os dados de um livro
